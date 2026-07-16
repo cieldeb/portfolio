@@ -1,21 +1,15 @@
-title: Abhishek Nagekar
-description: Web & Security Engineer
-site_title: '@abhn - Abhishek Nagekar'
+title: Jean MANOURY
+description: Portfolio technique
+site_title: '@cieldeb - Jean MANOURY'
 
 # Build settings
 markdown: kramdown
 exclude: [vendor/ruby]
 
 # Personalization
-github_username: abhn
-blog_url: https://www.nagekar.com
-email: abhishek@nagekar.com
-keybase_username: abhn
-twitter_username: abhn_
-reddit_username: abhn
+github_username: cieldeb
+#blog_url: https://www.nagekar.com
+email: jean.manoury@outlook.fr
 
 # absolute or relative
 profile_picture: assets/images/pp.jpg
-
-# Google Analytics ID
-google_analytics: 
