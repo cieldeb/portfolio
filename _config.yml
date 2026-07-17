@@ -8,8 +8,20 @@ exclude: [vendor/ruby]
 
 # Personalization
 github_username: cieldeb
-#blog_url: https://www.nagekar.com
+#blog_url: 
 email: jean.manoury@outlook.fr
 
 # absolute or relative
 profile_picture: assets/images/pp.jpg
+
+# 3D printing profiles (TODO: replace "#" with real profile URLs)
+printables_url: "#"
+thingiverse_url: "#"
+cults_url: "#"
+
+# 3D printing mosaic photos: add image files under assets/images/3dprinting/
+# and list their paths here, e.g.:
+# printing_photos:
+#   - assets/images/3dprinting/model1.jpg
+#   - assets/images/3dprinting/model2.jpg
+printing_photos: []
