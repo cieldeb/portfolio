@@ -15,13 +15,32 @@ email: jean.manoury@outlook.fr
 profile_picture: assets/images/pp.jpg
 
 # 3D printing profiles (TODO: replace "#" with real profile URLs)
-printables_url: "#"
-thingiverse_url: "#"
-cults_url: "#"
+printables_url: "https://www.printables.com/@un_ours_blanc"
+cults_url: "https://cults3d.com/fr/utilisateurs/un_ours_blanc/fichiers-3d"
+thingiverse_url: "https://www.thingiverse.com/un_ours_blanc/designs"
 
 # 3D printing mosaic photos: add image files under assets/images/3dprinting/
 # and list their paths here, e.g.:
-# printing_photos:
-#   - assets/images/3dprinting/model1.jpg
-#   - assets/images/3dprinting/model2.jpg
-printing_photos: []
+printing_photos:
+  - assets/images/3dprinting/cochonmc.png
+  - assets/images/3dprinting/katarmini.png
+  - assets/images/3dprinting/keycapsset.png
+  - assets/images/3dprinting/rollholder.png
+  - assets/images/3dprinting/totoche.png
+
+# Coding profiles
+github_url: "https://github.com/cieldeb"
+codeberg_url: "https://codeberg.org/cieldeb"
+weblate_url: "https://hosted.weblate.org/user/Ciel.deb/"
+
+# Other profiles
+photography_url: "https://cieldeb.github.io/photography/"
+linkedin_url: "https://www.linkedin.com/in/jeanmanoury"
+
+# Coding project screenshots
+coding_screenshots:
+  - assets/images/watermarkerExmpl.png
+  - assets/images/dirtree.png
+  - assets/images/commander.png
+  - assets/images/ProjetFinanceActions.png
+  - assets/images/courpaserverHomepage.jpg
