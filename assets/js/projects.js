@@ -32,13 +32,31 @@ let render_projects = (slug) => {
 
     let projects_obj = [
         {
-            images: ['assets/images/watermarkerExmpl.png'],
-            link: 'https://codeberg.org/cieldeb/watermarker',
-            title: 'Watermarker',
+            images: ['assets/images/ProjetFinanceActions.png'],
+            link: 'https://github.com/cieldeb/Projet_Finance',
+            title: 'Application de gestion de portefeuille financier',
             demo: false,
-            technologies: [techTag('golang'), techTag('wails'), techTag('yaml')],
-            description: "Outil en ligne de commande pour ajouter un filigrane à mes prises de vue pour les diffuser sur internet (<a href=\"https://cieldeb.github.io/portfolio/\">Exemple</a>). Les prochaines fonctionnalités ajoutées seront une interface graphique et des profils enregistrés dans la configuration de l'application.",
-            categories: ['featured', 'dev']
+            technologies: [techTag('java'), techTag('javafx'), techTag('json')],
+            description: "Une application de gestion de portefeuille financier avec visualisation de donnes. Développée en Java avec une interface graphique basée sur JavaFX.",
+            categories: ['dev']
+        },
+        {
+            images: ['assets/images/3dprinting/cochonmc.png'],
+            link: 'https://www.printables.com/model/114839-minecraft-pig',
+            title: 'Cochon Minecraft',
+            demo: false,
+            technologies: [techTag('FDM')],
+            description: "Figurine d'un cochon de Minecraft imprimée en 3D.",
+            categories: ['diy']
+        },
+        {
+            images: ['assets/images/3dprinting/katarmini.png'],
+            link: 'https://cults3d.com/fr/mod%C3%A8le-3d/gadget/corsair-katar-pro-wireless-light-and-fingertip-case',
+            title: 'Coque allégée pour souris Corsair Katar Pro Wireless',
+            demo: false,
+            technologies: [techTag('autodeskFusion'), techTag('FDM')],
+            description: "Coque pour prise en main \"fingertip\" imprimée en 3D pour alléger la souris Corsair Katar Pro Wireless, modélisée après prise de mesure précise des composants (électroniques ou pas).",
+            categories: ['featured', 'diy']
         },
         {
             images: ['assets/images/dirtree.png'],
@@ -59,15 +77,6 @@ let render_projects = (slug) => {
             categories: ['featured', 'webdev']
         },
         {
-            images: ['assets/images/ProjetFinanceActions.png'],
-            link: 'https://github.com/cieldeb/Projet_Finance',
-            title: 'Application de gestion de portefeuille financier',
-            demo: false,
-            technologies: [techTag('java'), techTag('javafx'), techTag('json')],
-            description: "Une application de gestion de portefeuille financier avec visualisation de donnes. Développée en Java avec une interface graphique basée sur JavaFX.",
-            categories: ['dev']
-        },
-        {
             images: ['assets/images/courpaserverHomepage.jpg'],
             link: "https://codeberg.org/cieldeb/smallServer.git",
             title: 'Serveur local',
@@ -77,30 +86,12 @@ let render_projects = (slug) => {
             categories: ['featured', 'dev']
         },
         {
-            images: ['assets/images/3dprinting/katarmini.png'],
-            link: 'https://cults3d.com/fr/mod%C3%A8le-3d/gadget/corsair-katar-pro-wireless-light-and-fingertip-case',
-            title: 'Coque allégée pour souris Corsair Katar Pro Wireless',
-            demo: false,
-            technologies: [techTag('autodeskFusion'), techTag('FDM')],
-            description: "Coque pour prise en main \"fingertip\" imprimée en 3D pour alléger la souris Corsair Katar Pro Wireless, modélisée après prise de mesure précise des composants (électroniques ou pas).",
-            categories: ['featured', 'diy']
-        },
-        {
             images: ['assets/images/3dprinting/keycapsset.png'],
             link: 'https://www.printables.com/model/263910-keycaps-set-for-mechanical-keyboard-cherrycross-st',
             title: 'Set de keycaps pour clavier mécanique',
             demo: false,
             technologies: [techTag('autodeskFusion'), techTag('FDM')],
             description: "Ensemble de touches (keycaps) imprimées en 3D, compatibles avec les switchs avec empreinte \"Cherry\"/\"Cross\", pour clavier mécanique.",
-            categories: ['diy']
-        },
-        {
-            images: ['assets/images/3dprinting/totoche.png'],
-            link: 'https://www.printables.com/model/229333-totoche-3d-printed-blow-horn-for-scouting-hunting-',
-            title: "Totoche : corne d'appel imprimée en 3D",
-            demo: false,
-            technologies: [techTag('autodeskFusion'), techTag('FDM')],
-            description: "Corne d'appel (« totoche ») imprimée en 3D, utilisée en scoutisme et pour la chasse, selon le besoin.",
             categories: ['diy']
         },
         {
@@ -113,13 +104,22 @@ let render_projects = (slug) => {
             categories: ['diy']
         },
         {
-            images: ['assets/images/3dprinting/cochonmc.png'],
-            link: 'https://www.printables.com/model/114839-minecraft-pig',
-            title: 'Cochon Minecraft',
+            images: ['assets/images/3dprinting/totoche.png'],
+            link: 'https://www.printables.com/model/229333-totoche-3d-printed-blow-horn-for-scouting-hunting-',
+            title: "Totoche : corne d'appel imprimée en 3D",
             demo: false,
-            technologies: [techTag('FDM')],
-            description: "Figurine d'un cochon de Minecraft imprimée en 3D.",
+            technologies: [techTag('autodeskFusion'), techTag('FDM')],
+            description: "Corne d'appel (« totoche ») imprimée en 3D, utilisée en scoutisme et pour la chasse, selon le besoin.",
             categories: ['diy']
+        },
+        {
+            images: ['assets/images/watermarkerExmpl.png'],
+            link: 'https://codeberg.org/cieldeb/watermarker',
+            title: 'Watermarker',
+            demo: false,
+            technologies: [techTag('golang'), techTag('wails'), techTag('yaml')],
+            description: "Outil en ligne de commande pour ajouter un filigrane à mes prises de vue pour les diffuser sur internet (<a href=\"https://cieldeb.github.io/portfolio/\">Exemple</a>). Les prochaines fonctionnalités ajoutées seront une interface graphique et des profils enregistrés dans la configuration de l'application.",
+            categories: ['featured', 'dev']
         },
     ]
 
