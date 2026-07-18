@@ -8,8 +8,9 @@ exclude: [vendor/ruby]
 
 # Personalization
 github_username: cieldeb
-#blog_url: 
+#blog_url:
 email: jean.manoury@outlook.fr
+repo_url: "https://github.com/cieldeb/portfolioTech"
 
 # absolute or relative
 profile_picture: assets/images/pp.jpg

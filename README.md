@@ -6,6 +6,7 @@ Source of my personal portfolio site, showcasing what I build and tinker with ou
 - [Sections](#sections)
 - [Tech stack](#tech-stack)
 - [Running locally](#running-locally)
+- [Running with Docker](#running-with-docker)
 - [Credits](#credits)
 
 ### About
@@ -28,6 +29,13 @@ bundle install
 bundle exec jekyll serve
 ```
 Then open `http://localhost:4000`.
+
+### Running with Docker
+For quick deployment on a home server or LAN:
+```bash
+docker compose up -d --build
+```
+Then open `http://<host>:8080`. This builds the Jekyll site and serves the static output via nginx. Change the exposed port in `docker-compose.yml` if needed.
 
 ### Credits
 Originally based on [abhn/portfolio](https://github.com/abhn/portfolio), a lightweight single-page portfolio template — thanks to [@abhn](https://github.com/abhn) for the starting point. It's since been reworked and re-themed to fit my own content and sections.

@@ -1,0 +1,8 @@
+.git
+_site
+.jekyll-cache
+vendor
+.gems
+.bundle
+tmp
+node_modules
