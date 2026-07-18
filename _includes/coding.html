@@ -1,0 +1,33 @@
+<div class="section-wrapper{% if include.bg == 'blur' %} patterned-bg{% endif %}">
+    <section class="section printing coding" id="coding">
+        <div class="full-width">
+            <div class="section-heading" id="coding-text">Développement</div>
+
+            <div class="printing-grid">
+                <div class="printing-profiles">
+                    <h3 class="center-align skills-subsection">Mes profils</h3>
+                    <ul class="profile-list">
+                        <li>
+                            <a class="semi-transparent-button with-border white-button profile-link" href="{{ site.github_url }}" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a class="semi-transparent-button with-border white-button profile-link" href="{{ site.codeberg_url }}" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-code-branch"></i> Codeberg
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="printing-mosaic">
+                    {% for screenshot in site.coding_screenshots %}
+                    <div class="mosaic-item">
+                        <img src="{{ screenshot }}" alt="Capture d'écran d'un projet de développement" loading="lazy">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

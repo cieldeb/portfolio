@@ -1,4 +1,4 @@
-<div class="section-wrapper">
+<div class="section-wrapper{% if include.bg == 'blur' %} patterned-bg{% endif %}">
     <section class="section projects" id="projects">
         <div class="full-width">
             <div class="section-heading" id="featured-projects-text">Projets</div>
@@ -9,7 +9,6 @@
                     <a id="all" class="semi-transparent-button with-border white-button" onclick="selected('all')">Tous</a>
                     <a id="webdev" class="semi-transparent-button with-border white-button" onclick="selected('webdev')">Web</a>
                     <a id="native" class="semi-transparent-button with-border white-button" onclick="selected('dev')">Logiciel</a>
-                    <a id="security" class="semi-transparent-button with-border white-button" onclick="selected('security')">Photography</a>
                     <a id="diy" class="semi-transparent-button with-border white-button" onclick="selected('diy')">DIY</a>
 
                 </div>
