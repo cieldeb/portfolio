@@ -23,9 +23,10 @@ let render_projects = (slug) => {
         javafx: ["https://openjfx.io/", "JavaFX"],
         docker: ["https://www.docker.com/", "Docker"],
         nixos: ["https://nixos.org/", "NixOs"],
+        jekyll: ["https://jekyllrb.com/", "Jekyll"],
         FDM: ["https://en.wikipedia.org/wiki/Fused_filament_fabrication", "Impression 3D FDM"],
         pla: ["https://en.wikipedia.org/wiki/Polylactic_acid", "PLA"],
-        autodeskFusion: ["https://openscad.org/", "OpenSCAD"],
+        autodeskFusion: ["https://www.autodesk.com/fr/products/fusion-360/overview", "Autodesk Fusion"],
     };
 
     let techTag = (key) => `<a href="${techLinks[key][0]}" target="_blank" rel="noopener noreferrer">${techLinks[key][1]}</a>`;
@@ -74,6 +75,24 @@ let render_projects = (slug) => {
             demo: false,
             technologies: [techTag('nodejs'), techTag('pgsql'), techTag('html'), techTag('css'), techTag('js')],
             description: "Une plateforme pour gérer les commandes passées au FabLab de mon association étudiante, avec un suivi de l'état des commandes et une messagerie pour chaque commande.",
+            categories: ['webdev']
+        },
+        {
+            images: ['assets/images/photospersos/DSC00749.jpg'],
+            link: 'https://cieldeb.github.io/photography/',
+            title: 'Portfolio photographique',
+            demo: false,
+            technologies: [techTag('html'), techTag('css')],
+            description: "Galerie photographique personnelle mettant en avant mes prises de vue de paysages et de nature.",
+            categories: ['webdev']
+        },
+        {
+            images: ['assets/images/portfolioTech.png'],
+            link: 'https://github.com/cieldeb/portfolioTech',
+            title: 'Portfolio technique',
+            demo: false,
+            technologies: [techTag('jekyll'), techTag('html'), techTag('css'), techTag('js'), techTag('docker')],
+            description: "Site vitrine présentant mes projets techniques, impressions 3D et contributions open source, avec un déploiement Docker prêt à l'emploi pour une utilisation sur réseau local.",
             categories: ['featured', 'webdev']
         },
         {

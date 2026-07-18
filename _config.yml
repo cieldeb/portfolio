@@ -45,3 +45,12 @@ coding_screenshots:
   - assets/images/commander.png
   - assets/images/ProjetFinanceActions.png
   - assets/images/courpaserverHomepage.jpg
+
+# Photography mosaic: personal shots under assets/images/photospersos/
+photography_photos:
+  - assets/images/photospersos/DSC00749.jpg
+  - assets/images/photospersos/DSC00795.jpg
+  - assets/images/photospersos/DSC01942.jpg
+  - assets/images/photospersos/DSC05934.jpg
+  - assets/images/photospersos/DSC09198.jpg
+  - assets/images/photospersos/DSC09735.jpg
