@@ -8,12 +8,11 @@
         <div class="head-punchline animated">{{ site.description }}</div>
         <!-- hrefs must match section ids set in _layouts/default.html (nav.html, mosaic keys, etc.) -->
         <div class="head-menu-wrap">
-            <a class="semi-transparent-button with-border nav-links" href="#about">A PROPOS</a>
-            <a class="semi-transparent-button with-border nav-links" href="#projects">PROJETS</a>
-            <a class="semi-transparent-button with-border nav-links" href="#coding">DEVELOPPEMENT</a>
-            <a class="semi-transparent-button with-border nav-links" href="#opensource">LOGICIEL LIBRE</a>
-            <a class="semi-transparent-button with-border nav-links" href="#3dprinting">IMPRESSION 3D</a>
-            <a class="semi-transparent-button with-border nav-links" href="#photography">PHOTOGRAPHIE</a>
+            {% for entry in site.navigation %}
+                {% for pair in entry %}
+                <a class="semi-transparent-button with-border nav-links" href="#{{ pair[0] }}">{{ pair[1] }}</a>
+                {% endfor %}
+            {% endfor %}
         </div>
     </div>
 </section>

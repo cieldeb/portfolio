@@ -150,7 +150,7 @@ projects:
         - golang
         - wails
         - yaml
-      description: Outil en ligne de commande pour ajouter un filigrane à mes prises de vue pour les diffuser sur internet (<a href="https://cieldeb.github.io/portfolio/">Exemple</a>). Les prochaines fonctionnalités ajoutées seront une interface graphique et des profils enregistrés dans la configuration de l'application.
+      description: Outil en ligne de commande pour ajouter un filigrane à mes prises de vue pour les diffuser sur internet. Les prochaines fonctionnalités ajoutées seront une interface graphique et des profils enregistrés dans la configuration de l'application.
       categories:
         - featured
         - dev

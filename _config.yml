@@ -14,20 +14,29 @@ repo_url: "https://github.com/cieldeb/portfolioTech"
 # absolute or relative
 profile_picture: assets/images/pp.jpg
 
-# 3D printing profiles
-printables_url: "https://www.printables.com/@cieldeb"
-cults_url: "https://cults3d.com/fr/utilisateurs/cieldeb/fichiers-3d"
-thingiverse_url: "https://www.thingiverse.com/un_ours_blanc/designs"
-thangs_url: "https://than.gs/u/365986"
+profiles_links:
+  # 3D printing profiles
+  printables_url: "https://www.printables.com/@cieldeb"
+  cults_url: "https://cults3d.com/fr/utilisateurs/cieldeb/fichiers-3d"
+  thingiverse_url: "https://www.thingiverse.com/un_ours_blanc/designs"
+  thangs_url: "https://than.gs/u/365986"
 
-# Coding profiles
-github_url: "https://github.com/cieldeb"
-codeberg_url: "https://codeberg.org/cieldeb"
-weblate_url: "https://hosted.weblate.org/user/Ciel.deb/"
+  # Coding profiles
+  github_url: "https://github.com/cieldeb"
+  codeberg_url: "https://codeberg.org/cieldeb"
+  weblate_url: "https://hosted.weblate.org/user/Ciel.deb/"
 
-# Other profiles
-photography_url: "https://cieldeb.github.io/photography/"
-linkedin_url: "https://www.linkedin.com/in/jeanmanoury"
+  # Other profiles
+  photography_url: "https://cieldeb.github.io/photography/"
+  linkedin_url: "https://www.linkedin.com/in/jeanmanoury"
 
 # The "Développement" / "Impression 3D" / "Photographie" sections (profile
 # links + photo mosaic) are configured in _data/mosaic_sections.yml.
+
+navigation:
+  - about: "A PROPOS"
+  - projects: "PROJETS"
+  - coding: "DEVELOPPEMENT"
+  - opensource: "LOGICIEL LIBRE"
+  - 3dprinting: "IMPRESSION 3D"
+  - photography: "PHOTOGRAPHIE"

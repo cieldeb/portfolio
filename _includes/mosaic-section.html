@@ -1,6 +1,7 @@
 {% comment %}
-  Reusable "profile links on the left, photo mosaic on the right" section.
+  Reusable "profile links on one side, photo mosaic on the other" section.
   Data lives in _data/mosaic_sections.yml — usage: {% include mosaic-section.html key="coding" %}
+  Pass reverse=true to swap sides (links right, mosaic left) — proportions stay the same either way.
 {% endcomment %}
 {% assign section = site.data.mosaic_sections[include.key] %}
 <div class="section-wrapper{% if include.bg == 'blur' %} patterned-bg{% endif %}">
@@ -8,7 +9,7 @@
         <div class="full-width">
             <div class="section-heading" id="{{ section.id }}-text">{{ section.heading }}</div>
 
-            <div class="printing-grid">
+            <div class="printing-grid{% if include.reverse %} reversed{% endif %}">
                 <div class="printing-profiles">
                     <ul class="profile-list">
                         {% for profile in section.profiles %}

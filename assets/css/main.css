@@ -191,6 +191,17 @@ img {
           flex: 4 1 60%;
 }
 
+/* scoped to the same width where .printing-grid is a row, so it can't fight the
+   mobile "stack as column" rule below regardless of stylesheet/specificity order */
+@media screen and (min-width: 601px) {
+  .printing-grid.reversed {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
 .printing-profiles {
   width: 90%;
   margin: 0 auto;
