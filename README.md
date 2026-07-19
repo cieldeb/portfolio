@@ -42,6 +42,3 @@ Originally based on [abhn/portfolio](https://github.com/abhn/portfolio), a light
 
 ### License
 GPL
-
-<!-- TODO make cleaner for reproducibility, the mosaics and links should be made plug and play
-     TODO make the pp page responsive -->
