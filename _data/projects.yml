@@ -87,7 +87,7 @@ projects:
         - css
         - js
         - docker
-      description: Site vitrine présentant mes projets techniques, impressions 3D et contributions open source, avec un déploiement Docker prêt à l'emploi pour une utilisation sur réseau local.
+      description: Site vitrine présentant mes projets techniques, de CAO et mes contributions open source, avec un déploiement Docker prêt à l'emploi pour une utilisation sur réseau local.
       categories:
         - featured
         - webdev
