@@ -1,0 +1,35 @@
+# Data for the "Liens utiles" section (_includes/links.html).
+# To add a link: append an entry here, no template change needed.
+# icon is a Font Awesome class (see https://fontawesome.com/v5/search).
+
+- url: "https://github.com/cieldeb"
+  icon: fab fa-github
+  label: GitHub
+
+- url: "https://codeberg.org/cieldeb"
+  icon: fas fa-code-branch
+  label: Codeberg
+
+- url: "https://hosted.weblate.org/user/Ciel.deb/"
+  icon: fas fa-language
+  label: Weblate
+
+- url: "https://www.printables.com/@cieldeb"
+  icon: fas fa-cube
+  label: Printables
+
+- url: "https://www.thingiverse.com/un_ours_blanc/designs"
+  icon: fas fa-cube
+  label: Thingiverse
+
+- url: "https://cults3d.com/fr/utilisateurs/cieldeb/fichiers-3d"
+  icon: fas fa-cube
+  label: Cults3D
+
+- url: "https://cieldeb.github.io/photography/"
+  icon: fas fa-camera
+  label: Photographie
+
+- url: "https://www.linkedin.com/in/jeanmanoury"
+  icon: fab fa-linkedin
+  label: LinkedIn
