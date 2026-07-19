@@ -54,6 +54,26 @@ projects:
       categories:
         - dev
 
+  - eventsIT:
+      images:
+        - assets/images/eventsIT/mainEventIT.png
+        - assets/images/eventsIT/mainUser.png
+        - assets/images/eventsIT/volumeSelector.png
+        - assets/images/eventsIT/CGUAccept.png
+        - assets/images/eventsIT/RGPD.png
+        - assets/images/eventsIT/organiserDash.png
+      link: https://github.com/APP-G10E/Events-IT_Main
+      title: Site web Events-IT
+      demo: false
+      technologies:
+        - html
+        - css
+        - js
+        - sql
+      description: Projet étudiant de groupe sur l'année, site web développé à 3. En plus des fonctionnalités individuelles pour les différents types d'utilisateurs, le site internet pouvait recevoir des informations de niveau sonore d'une centrale d'acquisition et les afficher en temps réel.
+      categories:
+        - webdev
+
   - fablab:
       images:
         - assets/images/fablab/order.png
@@ -244,3 +264,6 @@ techlinks:
   electronics:
     link: https://fr.wikipedia.org/wiki/%C3%89lectronique_(technique)
     name: Électronique
+  sql:
+    link: https://fr.wikipedia.org/wiki/Structured_Query_Language
+    name: SQL
