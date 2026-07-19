@@ -9,16 +9,16 @@ exclude: [vendor/ruby]
 # Personalization
 github_username: cieldeb
 #blog_url:
-email: jean.manoury@outlook.fr
 repo_url: "https://github.com/cieldeb/portfolioTech"
 
 # absolute or relative
 profile_picture: assets/images/pp.jpg
 
-# 3D printing profiles (TODO: replace "#" with real profile URLs)
-printables_url: "https://www.printables.com/@un_ours_blanc"
-cults_url: "https://cults3d.com/fr/utilisateurs/un_ours_blanc/fichiers-3d"
+# 3D printing profiles
+printables_url: "https://www.printables.com/@cieldeb"
+cults_url: "https://cults3d.com/fr/utilisateurs/cieldeb/fichiers-3d"
 thingiverse_url: "https://www.thingiverse.com/un_ours_blanc/designs"
+thangs_url: "https://than.gs/u/365986"
 
 # Coding profiles
 github_url: "https://github.com/cieldeb"

@@ -274,6 +274,10 @@ img {
   max-width: 50%;
 }
 
+.projects-wrapper > .wrapper.project-hidden {
+  display: none;
+}
+
 .full-width {
   width: 100%;
   max-width: 100%;

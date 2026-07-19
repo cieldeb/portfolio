@@ -36,6 +36,9 @@ coding:
     - url: "https://cults3d.com/fr/utilisateurs/un_ours_blanc/fichiers-3d"
       icon: fas fa-cube
       label: Cults3D
+    - url: "https://than.gs/u/365986"
+      icon: fas fa-cube
+      label: Thangs
   photos:
     - assets/images/3dprinting/cochonmc.png
     - assets/images/3dprinting/katarmini.png
