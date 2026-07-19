@@ -10,7 +10,7 @@ Source of my personal portfolio site, showcasing what I build and tinker with ou
 - [Credits](#credits)
 
 ### About
-Diplômé de l'[ISEP](https://www.isep.fr/), I'm curious by nature and passionate about anything tech-related. This site is a single-page overview of what I've explored and built — a complement to my résumé rather than a replacement for it.
+This site is a single-page overview of what I've explored and built — a complement to my résumé rather than a replacement for it.
 
 ### Sections
 - **À propos** — a short introduction
