@@ -10,7 +10,7 @@
                     <a id="all" class="semi-transparent-button with-border white-button" onclick="selected('all')">Tous</a>
                     <a id="webdev" class="semi-transparent-button with-border white-button" onclick="selected('webdev')">Web</a>
                     <a id="native" class="semi-transparent-button with-border white-button" onclick="selected('dev')">Logiciel</a>
-                    <a id="diy" class="semi-transparent-button with-border white-button" onclick="selected('diy')">Impression 3D</a>
+                    <a id="3d" class="semi-transparent-button with-border white-button" onclick="selected('3d')">Impression 3D</a>
 
                 </div>
 
@@ -25,9 +25,14 @@
                     <div class="card__image border-tlr-radius">
                         <div class="carousel">
                             <div class="carousel-track">
-                                <img src="{{ project.images }}" alt="{{ project.title }}" class="carousel-slide border-tlr-radius active">
+                                <img src="{{ project.images.first }}" alt="{{ project.title }}" class="carousel-slide border-tlr-radius active" loading="lazy">
                             </div>
                         </div>
+                        {% if project.images.size > 1 %}
+                        <button type="button" class="card__gallery-trigger" aria-label="Voir toutes les photos : {{ project.title }}" onclick='openGallery({{ project.images | jsonify }})'>
+                            <i class="fas fa-expand"></i>
+                        </button>
+                        {% endif %}
                     </div>
                     {% endif %}
 
@@ -35,9 +40,11 @@
 
                         <div class="card__header">
                             <h2 class="card__title">{{ project.title }}</h2>
+                            {% if project.link and project.link != "none" %}
                             <a class="card__external-link" href="{{ project.link }}" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet : {{ project.title }}">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
+                            {% endif %}
                         </div>
 
                         <article class="card__article">

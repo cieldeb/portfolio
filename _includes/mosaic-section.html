@@ -11,6 +11,9 @@
 
             <div class="printing-grid{% if include.reverse %} reversed{% endif %}">
                 <div class="printing-profiles">
+                    {% if section.profiles_title %}
+                    <div class="profiles-title">{{ section.profiles_title }}</div>
+                    {% endif %}
                     <ul class="profile-list">
                         {% for profile in section.profiles %}
                         <li>

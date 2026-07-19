@@ -2,6 +2,11 @@
     <title>{{ site.site_title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- open the connection to external asset origins early, before their stylesheets are parsed -->
+    <link rel="preconnect" href="https://use.fontawesome.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- vendored libs, kept local for offline/no-CDN reliability -->
     <link rel="stylesheet" href="vendor/css/normalize.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">

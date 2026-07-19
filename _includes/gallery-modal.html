@@ -1,0 +1,14 @@
+{% comment %}
+  Single reusable image popup, populated by openGallery() in assets/js/gallery.js
+  (triggered by the .card__gallery-trigger button on project cards with multiple images).
+  Clicking the blurred backdrop closes it; only the image and arrows sit above it.
+{% endcomment %}
+<div class="gallery-modal" id="gallery-modal">
+    <button type="button" class="carousel-arrow gallery-modal-prev" aria-label="Photo précédente" onclick="galleryPrev()">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <img class="gallery-modal-image" id="gallery-modal-image" src="" alt="">
+    <button type="button" class="carousel-arrow gallery-modal-next" aria-label="Photo suivante" onclick="galleryNext()">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+</div>

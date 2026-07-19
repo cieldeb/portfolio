@@ -1,6 +1,7 @@
 projects:
   - gestionPortefeuille:
-      images: assets/images/ProjetFinanceActions.png
+      images:
+        - assets/images/ProjetFinanceActions.png
       link: https://github.com/cieldeb/Projet_Finance
       title: Application de gestion de portefeuille financier
       demo: false
@@ -13,7 +14,8 @@ projects:
         - dev
 
   - cochonMinecraft:
-      images: assets/images/3dprinting/cochonmc.png
+      images:
+        - assets/images/3dprinting/cochonmc.png
       link: https://www.printables.com/model/114839-minecraft-pig
       title: Cochon Minecraft
       demo: false
@@ -22,10 +24,11 @@ projects:
         - fdm
       description: Figurine d'un cochon de Minecraft imprimée en 3D totalisant plus de 5600 téléchargements en ligne
       categories:
-        - diy
+        - 3d
 
   - coqueKatarPro:
-      images: assets/images/3dprinting/katarmini.png
+      images:
+        - assets/images/3dprinting/katarmini.png
       link: https://cults3d.com/fr/mod%C3%A8le-3d/gadget/corsair-katar-pro-wireless-light-and-fingertip-case
       title: Coque allégée pour souris Corsair Katar Pro Wireless
       demo: false
@@ -35,10 +38,11 @@ projects:
       description: Coque pour prise en main "fingertip" imprimée en 3D pour alléger la souris Corsair Katar Pro Wireless, modélisée après prise de mesure précise des composants (électroniques ou pas).
       categories:
         - featured
-        - diy
+        - 3d
 
   - dirtree:
-      images: assets/images/dirtree.png
+      images:
+        - assets/images/dirtree.png
       link: https://codeberg.org/cieldeb/dirtree
       title: Dirtree
       demo: false
@@ -50,7 +54,12 @@ projects:
         - dev
 
   - fablab:
-      images: assets/images/commander.png
+      images:
+        - assets/images/fablab/order.png
+        - assets/images/fablab/adminfiles.png
+        - assets/images/fablab/adminmsg.png
+        - assets/images/fablab/login.png
+        - assets/images/fablab/suggestions.png
       link: https://codeberg.org/cieldeb/fablab
       title: Plateforme du FabLab
       demo: false
@@ -64,8 +73,25 @@ projects:
       categories:
         - webdev
 
+  - megaphone:
+      images:
+        - assets/images/3dprinting/megaphoneFull.jpg
+        - assets/images/3dprinting/megaphoneMic.jpg
+        - assets/images/3dprinting/megaphoneMagnets.jpg
+      # link:
+      title: Microphone déporté pour mégaphone
+      demo: false
+      technologies:
+        - autodeskFusion
+        - fdm
+        - electronics
+      description: Microphone déporté pour un mégaphone dont le microphone était intégré à la structure. Ajout d'un mode push-to-talk en plus du mode microphone ouvert intégré.
+      categories:
+        - 3d
+
   - portfolioPhotographique:
-      images: assets/images/photospersos/DSC00749.jpg
+      images:
+        - assets/images/photospersos/DSC00749.jpg
       link: https://cieldeb.github.io/photography/
       title: Portfolio photographique
       demo: false
@@ -77,7 +103,8 @@ projects:
         - webdev
 
   - portfolioTechnique:
-      images: assets/images/portfolioTech.png
+      images:
+        - assets/images/portfolioTech.png
       link: https://github.com/cieldeb/portfolioTech
       title: Portfolio technique
       demo: false
@@ -93,7 +120,8 @@ projects:
         - webdev
 
   - serveurLocal:
-      images: assets/images/courpaserverHomepage.jpg
+      images:
+        - assets/images/courpaserverHomepage.jpg
       link: https://codeberg.org/cieldeb/smallServer.git
       title: Serveur local
       demo: false
@@ -106,7 +134,8 @@ projects:
         - dev
 
   - keycapsSet:
-      images: assets/images/3dprinting/keycapsset.png
+      images:
+        - assets/images/3dprinting/keycapsset.png
       link: https://www.printables.com/model/263910-keycaps-set-for-mechanical-keyboard-cherrycross-st
       title: Set de keycaps pour clavier mécanique
       demo: false
@@ -115,10 +144,11 @@ projects:
         - fdm
       description: Ensemble de touches (keycaps) imprimées en 3D, compatibles avec les switchs avec empreinte "Cherry"/"Cross", pour clavier mécanique.
       categories:
-        - diy
+        - 3d
 
   - rollHolder:
-      images: assets/images/3dprinting/rollholder.png
+      images:
+        - assets/images/3dprinting/rollholder.png
       link: https://www.printables.com/model/266892-parametric-roll-holder
       title: Support à rouleau paramétrique
       demo: false
@@ -127,10 +157,11 @@ projects:
         - fdm
       description: Support de rouleau (papier essuie-tout) généré paramétriquement, incluant des aimants pour se fixer notamment à un frigo et imprimé en 3D.
       categories:
-        - diy
+        - 3d
 
   - totoche:
-      images: assets/images/3dprinting/totoche.png
+      images:
+        - assets/images/3dprinting/totoche.png
       link: https://www.printables.com/model/229333-totoche-3d-printed-blow-horn-for-scouting-hunting-
       title: "Totoche : corne d'appel imprimée en 3D"
       demo: false
@@ -139,10 +170,11 @@ projects:
         - fdm
       description: Corne d'appel (« totoche ») imprimée en 3D, utilisée en scoutisme et pour la chasse, selon le besoin.
       categories:
-        - diy
+        - 3d
 
   - watermarker:
-      images: assets/images/watermarkerExmpl.png
+      images: 
+        - assets/images/watermarkerExmpl.png
       link: https://codeberg.org/cieldeb/watermarker
       title: Watermarker
       demo: false
@@ -207,3 +239,6 @@ techlinks:
   tinkercad:
     link: https://www.tinkercad.com/
     name: Tinkercad
+  electronics:
+    link: https://fr.wikipedia.org/wiki/%C3%89lectronique_(technique)
+    name: Électronique

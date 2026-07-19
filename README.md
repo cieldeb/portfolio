@@ -17,7 +17,7 @@ This site is a single-page overview of what I've explored and built — a comple
 - **Développement** — coding projects, with links to my [GitHub](https://github.com/cieldeb) and [Codeberg](https://codeberg.org/cieldeb)
 - **Impression 3D** — 3D printing designs and prints, with links to my [Printables](https://www.printables.com/@un_ours_blanc), [Thingiverse](https://www.thingiverse.com/un_ours_blanc/designs) and [Cults3D](https://cults3d.com/fr/utilisateurs/un_ours_blanc/fichiers-3d) profiles
 - **Logiciel libre** — open source contributions and pull requests across various projects
-- **Projets** — filterable project gallery (Web, Logiciel, DIY)
+- **Projets** — filterable project gallery (Web, Logiciel, 3D printing and maker)
 - **Liens utiles** — quick links to all my profiles ([LinkedIn](https://www.linkedin.com/in/jeanmanoury), [photography](https://cieldeb.github.io/photography/), [Weblate](https://hosted.weblate.org/user/Ciel.deb/), etc.)
 
 ### Tech stack

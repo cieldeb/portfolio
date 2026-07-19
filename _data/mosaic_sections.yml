@@ -3,11 +3,14 @@
 # To add a new mosaic section: add an entry here, then
 # {% include mosaic-section.html key="<key>" bg="white|blur" %} it from a layout
 # (bg controls the section's background and is passed at the call site).
+# profiles_title is optional — a small heading shown above that section's links;
+# leave it out to show just the links.
 
 coding:
   id: coding
   heading: Développement
   photo_alt: Capture d'écran d'un projet de développement
+  profiles_title: Mes profils
   profiles:
     - url: "https://github.com/cieldeb"
       icon: fab fa-github
@@ -18,7 +21,7 @@ coding:
   photos:
     - assets/images/watermarkerExmpl.png
     - assets/images/dirtree.png
-    - assets/images/commander.png
+    - assets/images/fablab/order.png
     - assets/images/ProjetFinanceActions.png
     - assets/images/courpaserverHomepage.jpg
 
