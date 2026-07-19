@@ -1,0 +1,60 @@
+# Data for the reusable mosaic-section.html include.
+# Each key is a section: links on the left, a photo mosaic on the right.
+# To add a new mosaic section: add an entry here, then
+# {% include mosaic-section.html key="<key>" bg="white|blur" %} it from a layout
+# (bg controls the section's background and is passed at the call site).
+
+coding:
+  id: coding
+  heading: Développement
+  photo_alt: Capture d'écran d'un projet de développement
+  profiles:
+    - url: "https://github.com/cieldeb"
+      icon: fab fa-github
+      label: GitHub
+    - url: "https://codeberg.org/cieldeb"
+      icon: fas fa-code-branch
+      label: Codeberg
+  photos:
+    - assets/images/watermarkerExmpl.png
+    - assets/images/dirtree.png
+    - assets/images/commander.png
+    - assets/images/ProjetFinanceActions.png
+    - assets/images/courpaserverHomepage.jpg
+
+3dprinting:
+  id: 3dprinting
+  heading: Impression 3D
+  photo_alt: Modèle 3D imprimé
+  profiles:
+    - url: "https://www.printables.com/@un_ours_blanc"
+      icon: fas fa-cube
+      label: Printables
+    - url: "https://www.thingiverse.com/un_ours_blanc/designs"
+      icon: fas fa-cube
+      label: Thingiverse
+    - url: "https://cults3d.com/fr/utilisateurs/un_ours_blanc/fichiers-3d"
+      icon: fas fa-cube
+      label: Cults3D
+  photos:
+    - assets/images/3dprinting/cochonmc.png
+    - assets/images/3dprinting/katarmini.png
+    - assets/images/3dprinting/keycapsset.png
+    - assets/images/3dprinting/rollholder.png
+    - assets/images/3dprinting/totoche.png
+
+photography:
+  id: photography
+  heading: Photographie
+  photo_alt: Photographie personnelle
+  profiles:
+    - url: "https://cieldeb.github.io/photography/"
+      icon: fas fa-camera
+      label: Portfolio photographique
+  photos:
+    - assets/images/photospersos/DSC00749.jpg
+    - assets/images/photospersos/DSC00795.jpg
+    - assets/images/photospersos/DSC01942.jpg
+    - assets/images/photospersos/DSC05934.jpg
+    - assets/images/photospersos/DSC09198.jpg
+    - assets/images/photospersos/DSC09735.jpg

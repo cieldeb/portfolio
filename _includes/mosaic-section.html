@@ -1,0 +1,34 @@
+{% comment %}
+  Reusable "profile links on the left, photo mosaic on the right" section.
+  Data lives in _data/mosaic_sections.yml — usage: {% include mosaic-section.html key="coding" %}
+{% endcomment %}
+{% assign section = site.data.mosaic_sections[include.key] %}
+<div class="section-wrapper{% if include.bg == 'blur' %} patterned-bg{% endif %}">
+    <section class="section printing" id="{{ section.id }}">
+        <div class="full-width">
+            <div class="section-heading" id="{{ section.id }}-text">{{ section.heading }}</div>
+
+            <div class="printing-grid">
+                <div class="printing-profiles">
+                    <ul class="profile-list">
+                        {% for profile in section.profiles %}
+                        <li>
+                            <a class="semi-transparent-button with-border white-button profile-link" href="{{ profile.url }}" target="_blank" rel="noopener noreferrer">
+                                <i class="{{ profile.icon }}"></i> {{ profile.label }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="printing-mosaic">
+                    {% for photo in section.photos %}
+                    <div class="mosaic-item">
+                        <img src="{{ photo }}" alt="{{ section.photo_alt }}" loading="lazy">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
