@@ -20,15 +20,6 @@ printables_url: "https://www.printables.com/@un_ours_blanc"
 cults_url: "https://cults3d.com/fr/utilisateurs/un_ours_blanc/fichiers-3d"
 thingiverse_url: "https://www.thingiverse.com/un_ours_blanc/designs"
 
-# 3D printing mosaic photos: add image files under assets/images/3dprinting/
-# and list their paths here, e.g.:
-printing_photos:
-  - assets/images/3dprinting/cochonmc.png
-  - assets/images/3dprinting/katarmini.png
-  - assets/images/3dprinting/keycapsset.png
-  - assets/images/3dprinting/rollholder.png
-  - assets/images/3dprinting/totoche.png
-
 # Coding profiles
 github_url: "https://github.com/cieldeb"
 codeberg_url: "https://codeberg.org/cieldeb"
@@ -38,19 +29,5 @@ weblate_url: "https://hosted.weblate.org/user/Ciel.deb/"
 photography_url: "https://cieldeb.github.io/photography/"
 linkedin_url: "https://www.linkedin.com/in/jeanmanoury"
 
-# Coding project screenshots
-coding_screenshots:
-  - assets/images/watermarkerExmpl.png
-  - assets/images/dirtree.png
-  - assets/images/commander.png
-  - assets/images/ProjetFinanceActions.png
-  - assets/images/courpaserverHomepage.jpg
-
-# Photography mosaic: personal shots under assets/images/photospersos/
-photography_photos:
-  - assets/images/photospersos/DSC00749.jpg
-  - assets/images/photospersos/DSC00795.jpg
-  - assets/images/photospersos/DSC01942.jpg
-  - assets/images/photospersos/DSC05934.jpg
-  - assets/images/photospersos/DSC09198.jpg
-  - assets/images/photospersos/DSC09735.jpg
+# The "Développement" / "Impression 3D" / "Photographie" sections (profile
+# links + photo mosaic) are configured in _data/mosaic_sections.yml.

@@ -859,8 +859,17 @@ a {
 
 @media screen and (max-width: 600px) {
 
+  .head {
+    padding: 100px 0 40px;
+  }
+
   .head-menu-wrap {
-    width: 80%;
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    width: 100%;
+    max-width: 320px;
+    margin: 24px auto 0;
   }
 
   #nav {

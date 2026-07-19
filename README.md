@@ -21,7 +21,7 @@ Diplômé de l'[ISEP](https://www.isep.fr/), I'm curious by nature and passionat
 - **Liens utiles** — quick links to all my profiles ([LinkedIn](https://www.linkedin.com/in/jeanmanoury), [photography](https://cieldeb.github.io/photography/), [Weblate](https://hosted.weblate.org/user/Ciel.deb/), etc.)
 
 ### Tech stack
-Static site built with Jekyll, vanilla CSS/JS and a bit of jQuery. Content lives in `_includes/`, layout in `_layouts/default.html`, and personal details/links are configured in `_config.yml`.
+Static site built with Jekyll, vanilla CSS/JS and a bit of jQuery. Content lives in `_includes/`, layout in `_layouts/default.html`, and personal details/links are configured in `_config.yml`. The "Développement" / "Impression 3D" / "Photographie" sections (profile links + photo mosaic) share a single template, `_includes/mosaic-section.html`, driven by `_data/mosaic_sections.yml` — add a new section by adding an entry there and one `{% include mosaic-section.html key="..." bg="white|blur" %}` call in `_layouts/default.html` (the background is controlled from the layout, not the data file).
 
 ### Running locally
 ```bash
@@ -42,3 +42,6 @@ Originally based on [abhn/portfolio](https://github.com/abhn/portfolio), a light
 
 ### License
 GPL
+
+<!-- TODO make cleaner for reproducibility, the mosaics and links should be made plug and play
+     TODO make the pp page responsive -->
