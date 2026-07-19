@@ -1,19 +1,16 @@
-
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', () => {
     general_utils();
-})
-
+});
 
 function general_utils() {
     // smooth scrolling for nav links
-    $('.head-menu-wrap a').smoothScroll();
-    $('.extra-link a').smoothScroll();
-    $('.profile-pic-link').smoothScroll();
-
-    $('.skillbar').each(function(){
-		$(this).find('.skillbar-bar').animate({
-			width: $(this).attr('data-percent')
-		}, 1000);
-	});
+    document.querySelectorAll('.head-menu-wrap a, .extra-link a, .profile-pic-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            if (!link.hash) return;
+            let target = document.querySelector(link.hash);
+            if (!target) return;
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
 }
-

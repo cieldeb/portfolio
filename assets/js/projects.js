@@ -1,13 +1,23 @@
-$(document).ready(() => {
+document.addEventListener('DOMContentLoaded', () => {
     render_projects('featured');
-})
+});
 
+
+let fade_in = (el, html) => {
+    el.style.transition = 'none';
+    el.style.opacity = 0;
+    el.innerHTML = html;
+    requestAnimationFrame(() => {
+        el.style.transition = 'opacity 0.4s';
+        el.style.opacity = 1;
+    });
+}
 
 let render_projects = (slug) => {
-    let projects_area = $('.projects-wrapper');
+    let projects_area = document.querySelector('.projects-wrapper');
 
-    $('.white-button').removeClass('white-button-hover');
-    $(`#${slug}`).addClass('white-button-hover');
+    document.querySelectorAll('.white-button').forEach(button => button.classList.remove('white-button-hover'));
+    document.getElementById(slug)?.classList.add('white-button-hover');
 
     let techLinks = {
         golang: ["https://go.dev/", "Golang"],
@@ -25,7 +35,6 @@ let render_projects = (slug) => {
         nixos: ["https://nixos.org/", "NixOs"],
         jekyll: ["https://jekyllrb.com/", "Jekyll"],
         FDM: ["https://en.wikipedia.org/wiki/Fused_filament_fabrication", "Impression 3D FDM"],
-        pla: ["https://en.wikipedia.org/wiki/Polylactic_acid", "PLA"],
         autodeskFusion: ["https://www.autodesk.com/fr/products/fusion-360/overview", "Autodesk Fusion"],
     };
 
@@ -145,11 +154,11 @@ let render_projects = (slug) => {
     let projects = [];
     if(slug == 'all') {
         projects = projects_obj.map(project_mapper);
-    } 
+    }
     else {
         projects = projects_obj.filter(project => project.categories.includes(slug)).map(project_mapper);
     }
-    projects_area.hide().html(projects).fadeIn();
+    fade_in(projects_area, projects.join(''));
 }
 
 let project_mapper = project => {
@@ -206,19 +215,17 @@ let selected = (slug) => {
 }
 
 let navigate_carousel = (track, direction) => {
-    let slides = track.find('.carousel-slide');
-    let currentIndex = slides.index(slides.filter('.active'));
+    let slides = [...track.querySelectorAll('.carousel-slide')];
+    let currentIndex = slides.findIndex(slide => slide.classList.contains('active'));
     let nextIndex = (currentIndex + direction + slides.length) % slides.length;
-    slides.removeClass('active');
-    slides.eq(nextIndex).addClass('active');
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[nextIndex].classList.add('active');
 }
 
-$(document).on('click', '.carousel-prev', function(e) {
+document.addEventListener('click', (e) => {
+    let button = e.target.closest('.carousel-prev, .carousel-next');
+    if (!button) return;
     e.preventDefault();
-    navigate_carousel($(this).siblings('.carousel-track'), -1);
-});
-
-$(document).on('click', '.carousel-next', function(e) {
-    e.preventDefault();
-    navigate_carousel($(this).siblings('.carousel-track'), 1);
+    let direction = button.classList.contains('carousel-prev') ? -1 : 1;
+    navigate_carousel(button.closest('.carousel').querySelector('.carousel-track'), direction);
 });
