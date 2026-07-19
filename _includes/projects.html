@@ -3,6 +3,7 @@
         <div class="full-width">
             <div class="section-heading" id="featured-projects-text">Projets</div>
             
+                <!-- filter buttons: selected('X') in assets/js/projects.js shows cards whose data-categories includes X -->
                 <div class="project-technologies">
 
                     <a id="featured" class="semi-transparent-button with-border white-button" onclick="selected('featured')">Principaux</a>
@@ -13,6 +14,7 @@
 
                 </div>
 
+            <!-- cards are generated from _data/projects.yml, add/edit entries there rather than here -->
             <div class="projects-wrapper">
             {% for entry in site.data.projects.projects %}
             {% for pair in entry %}
