@@ -1,4 +1,4 @@
-# Portfolio — Jean MANOURY (@cieldeb)
+# Portfolio — @cieldeb
 
 Source of my personal portfolio site, showcasing what I build and tinker with outside of school and work: software projects, 3D printing, open source contributions, and more.
 
