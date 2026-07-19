@@ -14,7 +14,52 @@
                 </div>
 
             <div class="projects-wrapper">
-            <!-- filled in by js -->
+            {% for entry in site.data.projects.projects %}
+            {% for pair in entry %}
+            {% assign project = pair[1] %}
+            <div class="wrapper" data-categories="{{ project.categories | join: ' ' }}">
+                <div class="card radius shadowDepth1">
+                    {% if project.images %}
+                    <div class="card__image border-tlr-radius">
+                        <div class="carousel">
+                            <div class="carousel-track">
+                                <img src="{{ project.images }}" alt="{{ project.title }}" class="carousel-slide border-tlr-radius active">
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    <div class="card__content card__padding">
+
+                        <div class="card__header">
+                            <h2 class="card__title">{{ project.title }}</h2>
+                            <a class="card__external-link" href="{{ project.link }}" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet : {{ project.title }}">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+
+                        <article class="card__article">
+                            <p class="paragraph-text-normal">
+                                {{ project.description }}
+                                {% if project.demo %}<a href="{{ project.demo }}" target="_blank" rel="noopener noreferrer">Demo</a>{% endif %}
+                            </p>
+                        </article>
+
+
+                        <div class="card__meta">
+                            {% for tech_key in project.technologies %}
+                            {% assign tech = site.data.projects.techlinks[tech_key] %}
+                            <span class="project-technology paragraph-text-normal">
+                                <a href="{{ tech.link }}" target="_blank" rel="noopener noreferrer">{{ tech.name }}</a>
+                            </span>
+                            {% endfor %}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% endfor %}
             </div>
         </div>
     </section>

@@ -1,0 +1,209 @@
+projects:
+  - gestionPortefeuille:
+      images: assets/images/ProjetFinanceActions.png
+      link: https://github.com/cieldeb/Projet_Finance
+      title: Application de gestion de portefeuille financier
+      demo: false
+      technologies:
+        - java
+        - javafx
+        - json
+      description: Projet en binôme, application de gestion de portefeuille financier avec visualisation de donnes. Développée en Java avec une interface graphique basée sur JavaFX.
+      categories:
+        - dev
+
+  - cochonMinecraft:
+      images: assets/images/3dprinting/cochonmc.png
+      link: https://www.printables.com/model/114839-minecraft-pig
+      title: Cochon Minecraft
+      demo: false
+      technologies:
+        - tinkercad
+        - fdm
+      description: Figurine d'un cochon de Minecraft imprimée en 3D totalisant plus de 5600 téléchargements en ligne
+      categories:
+        - diy
+
+  - coqueKatarPro:
+      images: assets/images/3dprinting/katarmini.png
+      link: https://cults3d.com/fr/mod%C3%A8le-3d/gadget/corsair-katar-pro-wireless-light-and-fingertip-case
+      title: Coque allégée pour souris Corsair Katar Pro Wireless
+      demo: false
+      technologies:
+        - autodeskFusion
+        - fdm
+      description: Coque pour prise en main "fingertip" imprimée en 3D pour alléger la souris Corsair Katar Pro Wireless, modélisée après prise de mesure précise des composants (électroniques ou pas).
+      categories:
+        - featured
+        - diy
+
+  - dirtree:
+      images: assets/images/dirtree.png
+      link: https://codeberg.org/cieldeb/dirtree
+      title: Dirtree
+      demo: false
+      technologies:
+        - golang
+        - yaml
+      description: Outil en ligne de commande pour décrire l'arborescence d'un dossier dans le terminal, dans un fichier texte ou au format JSON, en ayant le contrôle sur divers paramètres comme la description récursive des dossiers, l'ensemble de caractères dessinant l'arbre ou encore l'ordre de description des éléments.
+      categories:
+        - dev
+
+  - fablab:
+      images: assets/images/commander.png
+      link: https://codeberg.org/cieldeb/fablab
+      title: Plateforme du FabLab
+      demo: false
+      technologies:
+        - nodejs
+        - pgsql
+        - html
+        - css
+        - js
+      description: Une plateforme pour gérer les commandes passées au FabLab de mon association étudiante, avec un suivi de l'état des commandes et une messagerie pour chaque commande.
+      categories:
+        - webdev
+
+  - portfolioPhotographique:
+      images: assets/images/photospersos/DSC00749.jpg
+      link: https://cieldeb.github.io/photography/
+      title: Portfolio photographique
+      demo: false
+      technologies:
+        - html
+        - css
+      description: Galerie photographique personnelle mettant en avant mes prises de vue de paysages et de nature.
+      categories:
+        - webdev
+
+  - portfolioTechnique:
+      images: assets/images/portfolioTech.png
+      link: https://github.com/cieldeb/portfolioTech
+      title: Portfolio technique
+      demo: false
+      technologies:
+        - jekyll
+        - html
+        - css
+        - js
+        - docker
+      description: Site vitrine présentant mes projets techniques, impressions 3D et contributions open source, avec un déploiement Docker prêt à l'emploi pour une utilisation sur réseau local.
+      categories:
+        - featured
+        - webdev
+
+  - serveurLocal:
+      images: assets/images/courpaserverHomepage.jpg
+      link: https://codeberg.org/cieldeb/smallServer.git
+      title: Serveur local
+      demo: false
+      technologies:
+        - docker
+        - nixos
+      description: Un serveur local permettant un partage sur le LAN (réseau local) de fichiers avec filebrowser et hébergeant un serveur minecraft
+      categories:
+        - featured
+        - dev
+
+  - keycapsSet:
+      images: assets/images/3dprinting/keycapsset.png
+      link: https://www.printables.com/model/263910-keycaps-set-for-mechanical-keyboard-cherrycross-st
+      title: Set de keycaps pour clavier mécanique
+      demo: false
+      technologies:
+        - autodeskFusion
+        - fdm
+      description: Ensemble de touches (keycaps) imprimées en 3D, compatibles avec les switchs avec empreinte "Cherry"/"Cross", pour clavier mécanique.
+      categories:
+        - diy
+
+  - rollHolder:
+      images: assets/images/3dprinting/rollholder.png
+      link: https://www.printables.com/model/266892-parametric-roll-holder
+      title: Support à rouleau paramétrique
+      demo: false
+      technologies:
+        - autodeskFusion
+        - fdm
+      description: Support de rouleau (papier essuie-tout) généré paramétriquement, incluant des aimants pour se fixer notamment à un frigo et imprimé en 3D.
+      categories:
+        - diy
+
+  - totoche:
+      images: assets/images/3dprinting/totoche.png
+      link: https://www.printables.com/model/229333-totoche-3d-printed-blow-horn-for-scouting-hunting-
+      title: "Totoche : corne d'appel imprimée en 3D"
+      demo: false
+      technologies:
+        - autodeskFusion
+        - fdm
+      description: Corne d'appel (« totoche ») imprimée en 3D, utilisée en scoutisme et pour la chasse, selon le besoin.
+      categories:
+        - diy
+
+  - watermarker:
+      images: assets/images/watermarkerExmpl.png
+      link: https://codeberg.org/cieldeb/watermarker
+      title: Watermarker
+      demo: false
+      technologies:
+        - golang
+        - wails
+        - yaml
+      description: Outil en ligne de commande pour ajouter un filigrane à mes prises de vue pour les diffuser sur internet (<a href="https://cieldeb.github.io/portfolio/">Exemple</a>). Les prochaines fonctionnalités ajoutées seront une interface graphique et des profils enregistrés dans la configuration de l'application.
+      categories:
+        - featured
+        - dev
+
+techlinks:
+  golang:
+    link: https://go.dev/
+    name: Golang
+  wails:
+    link: https://wails.io/
+    name: Wails
+  yaml:
+    link: https://yaml.org/
+    name: YAML
+  pgsql:
+    link: https://postgresql.org/
+    name: PostgreSQL
+  nodejs:
+    link: https://nodejs.org/
+    name: NodeJS
+  html:
+    link: https://developer.mozilla.org/en-US/docs/Web/HTML
+    name: HTML
+  css:
+    link: https://developer.mozilla.org/en-US/docs/Web/CSS
+    name: CSS
+  js:
+    link: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+    name: JS
+  json:
+    link: https://www.json.org/
+    name: JSON
+  java:
+    link: https://www.java.com/
+    name: Java
+  javafx:
+    link: https://openjfx.io/
+    name: JavaFX
+  docker:
+    link: https://www.docker.com/
+    name: Docker
+  nixos:
+    link: https://nixos.org/
+    name: NixOs
+  jekyll:
+    link: https://jekyllrb.com/
+    name: Jekyll
+  fdm:
+    link: https://en.wikipedia.org/wiki/Fused_filament_fabrication
+    name: Impression 3D FDM
+  autodeskFusion:
+    link: https://www.autodesk.com/fr/products/fusion-360/overview
+    name: Autodesk Fusion
+  tinkercad:
+    link: https://www.tinkercad.com/
+    name: Tinkercad
