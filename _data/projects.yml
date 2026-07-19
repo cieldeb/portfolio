@@ -1,7 +1,8 @@
 projects:
   - gestionPortefeuille:
       images:
-        - assets/images/ProjetFinanceActions.png
+        - assets/images/projetFinance/ProjetFinanceActions.png
+        - assets/images/projetFinance/ProjetFinanceComptes.png
       link: https://github.com/cieldeb/Projet_Finance
       title: Application de gestion de portefeuille financier
       demo: false
