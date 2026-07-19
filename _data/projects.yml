@@ -77,6 +77,7 @@ projects:
   - megaphone:
       images:
         - assets/images/3dprinting/megaphoneFull.jpg
+        - assets/images/3dprinting/megaphoneOriginal.jpg
         - assets/images/3dprinting/megaphoneMic.jpg
         - assets/images/3dprinting/megaphoneMagnets.jpg
       # link:
@@ -86,7 +87,7 @@ projects:
         - autodeskFusion
         - fdm
         - electronics
-      description: Microphone déporté pour un mégaphone dont le microphone était intégré à la structure. Ajout d'un mode push-to-talk en plus du mode microphone ouvert intégré.
+      description: Microphone déporté pour un mégaphone dont le microphone était intégré à la structure. Ajout d'un mode push-to-talk en plus du mode microphone ouvert intégré et changement du thème de couleur.
       categories:
         - 3d
 
