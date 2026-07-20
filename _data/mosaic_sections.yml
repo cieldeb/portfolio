@@ -10,7 +10,7 @@ coding:
   id: coding
   heading: Développement
   photo_alt: Capture d'écran d'un projet de développement
-  profiles_title: Mes profils
+  profiles_title: Pour explorer mes projets
   profiles:
     - url: "https://github.com/cieldeb"
       icon: fab fa-github
@@ -29,14 +29,15 @@ coding:
   id: 3dprinting
   heading: Impression 3D
   photo_alt: Modèle 3D imprimé
+  profiles_title: Créations disponibles en téléchargement libre
   profiles:
-    - url: "https://www.printables.com/@un_ours_blanc"
+    - url: "https://www.printables.com/@cieldeb"
       icon: fas fa-cube
       label: Printables
     - url: "https://www.thingiverse.com/un_ours_blanc/designs"
       icon: fas fa-cube
       label: Thingiverse
-    - url: "https://cults3d.com/fr/utilisateurs/un_ours_blanc/fichiers-3d"
+    - url: "https://cults3d.com/fr/utilisateurs/cieldeb/fichiers-3d"
       icon: fas fa-cube
       label: Cults3D
     - url: "https://than.gs/u/365986"
