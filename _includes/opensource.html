@@ -39,7 +39,7 @@
                     <div class="opensource-item-header">
                         <span class="opensource-repo">{{ c.repo }}</span>
                         <span class="opensource-badge opensource-badge-{{ c.status }}">
-                            {% if c.badge %}{{ c.badge }}{% elsif c.status == 'merged' %}Mergée{% else %}Ouverte{% endif %}
+                            {% if c.badge %}{{ c.badge }}{% elsif c.status == 'merged' %}Mergée{% elsif c.status == 'closed' %}Fermée{% else %}Ouverte{% endif %}
                         </span>
                     </div>
                     <p class="opensource-title">{{ c.title }}</p>

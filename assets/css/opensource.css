@@ -135,6 +135,12 @@
   color: #222;
 }
 
+.opensource-badge-closed {
+  background: transparent;
+  border: 1px solid #999;
+  color: #999;
+}
+
 .opensource-title {
   margin: 8px 0 0;
   font-family: 'PT Sans', sans-serif;

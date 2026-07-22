@@ -4,10 +4,13 @@
 #
 # kind:   "pr" (default) counts towards the Pull requests / Mergées / Ouvertes
 #         stats; "translation" (e.g. Weblate) doesn't, since it's not a PR.
-# status: "merged" or "open" — picks the badge color (opensource-badge-<status>).
+# status: "merged"/"open"/"closed" — picks the badge color (opensource-badge-<status>).
+#         For GitHub/Codeberg PR urls this is fetched live at build time
+#         (see _plugins/remote_git_stats.rb); the value here is just the
+#         fallback used if that lookup fails (offline build, rate limit...).
 # badge:  optional override for the badge text. Leave unset to get the default
-#         wording for the status ("Mergée"/"Ouverte"); set it for anything that
-#         needs different wording, e.g. "Traductions".
+#         wording for the status ("Mergée"/"Ouverte"/"Fermée"); set it for
+#         anything that needs different wording, e.g. "Traductions".
 contributions:
   - repo: Weblate
     url: "https://hosted.weblate.org/user/Ciel.deb/"

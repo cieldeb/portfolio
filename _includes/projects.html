@@ -54,6 +54,16 @@
                             </p>
                         </article>
 
+                        {% if project.commit_count or project.download_count %}
+                        <div class="card__stats">
+                            {% if project.commit_count %}
+                            <span class="card__stat"><i class="fas fa-code-branch"></i> {{ project.commit_count }} commits</span>
+                            {% endif %}
+                            {% if project.download_count %}
+                            <span class="card__stat"><i class="fas fa-download"></i> {{ project.download_count }} téléchargements</span>
+                            {% endif %}
+                        </div>
+                        {% endif %}
 
                         <div class="card__meta">
                             {% for tech_key in project.technologies %}

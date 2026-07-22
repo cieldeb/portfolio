@@ -1,3 +1,9 @@
+# stats supports:
+#   commits   — commit count on the default branch, from `link` (GitHub/Codeberg only)
+#   downloads — download count, from `link` (Printables or Cults3D; Cults3D
+#               needs CULTS_USERNAME/CULTS_API_KEY, see .env.example)
+# fetched live at build time, see _plugins/remote_git_stats.rb. Omit `stats`
+# for projects that don't need it.
 projects:
   - gestionPortefeuille:
       images:
@@ -13,6 +19,8 @@ projects:
       description: Projet en binôme, application de gestion de portefeuille financier avec visualisation de donnes. Développée en Java avec une interface graphique basée sur JavaFX.
       categories:
         - dev
+      stats:
+        - commits
 
   - cochonMinecraft:
       images:
@@ -26,6 +34,8 @@ projects:
       description: Figurine d'un cochon de Minecraft imprimée en 3D totalisant plus de 5600 téléchargements en ligne
       categories:
         - 3d
+      stats:
+        - downloads
 
   - coqueKatarPro:
       images:
@@ -40,6 +50,8 @@ projects:
       categories:
         - featured
         - 3d
+      stats:
+        - downloads
 
   - dirtree:
       images:
@@ -53,6 +65,8 @@ projects:
       description: Outil en ligne de commande pour décrire l'arborescence d'un dossier dans le terminal, dans un fichier texte ou au format JSON, en ayant le contrôle sur divers paramètres comme la description récursive des dossiers, l'ensemble de caractères dessinant l'arbre ou encore l'ordre de description des éléments.
       categories:
         - dev
+      stats:
+        - commits
 
   - eventsIT:
       images:
@@ -73,6 +87,8 @@ projects:
       description: Projet étudiant de groupe sur l'année, site web développé à 3. En plus des fonctionnalités individuelles pour les différents types d'utilisateurs, le site internet pouvait recevoir des informations de niveau sonore d'une centrale d'acquisition et les afficher en temps réel.
       categories:
         - webdev
+      stats:
+        - commits
 
   - fablab:
       images:
@@ -93,6 +109,8 @@ projects:
       description: Une plateforme pour gérer les commandes passées au FabLab de mon association étudiante, avec un suivi de l'état des commandes et une messagerie pour chaque commande.
       categories:
         - webdev
+      stats:
+        - commits
 
   - megaphone:
       images:
@@ -123,6 +141,8 @@ projects:
       description: Galerie photographique personnelle mettant en avant mes prises de vue de paysages et de nature.
       categories:
         - webdev
+      stats:
+        - commits
 
   - portfolioTechnique:
       images:
@@ -140,6 +160,8 @@ projects:
       categories:
         - featured
         - webdev
+      stats:
+        - commits
 
   - serveurLocal:
       images:
@@ -154,6 +176,8 @@ projects:
       categories:
         - featured
         - dev
+      stats:
+        - commits
 
   - keycapsSet:
       images:
@@ -167,6 +191,8 @@ projects:
       description: Ensemble de touches (keycaps) imprimées en 3D, compatibles avec les switchs avec empreinte "Cherry"/"Cross", pour clavier mécanique.
       categories:
         - 3d
+      stats:
+        - downloads
 
   - rollHolder:
       images:
@@ -180,6 +206,8 @@ projects:
       description: Support de rouleau (papier essuie-tout) généré paramétriquement, incluant des aimants pour se fixer notamment à un frigo et imprimé en 3D.
       categories:
         - 3d
+      stats:
+        - downloads
 
   - totoche:
       images:
@@ -193,6 +221,8 @@ projects:
       description: Corne d'appel (« totoche ») imprimée en 3D, utilisée en scoutisme et pour la chasse, selon le besoin.
       categories:
         - 3d
+      stats:
+        - downloads
 
   - watermarker:
       images: 
@@ -208,6 +238,8 @@ projects:
       categories:
         - featured
         - dev
+      stats:
+        - commits
 
 techlinks:
   golang:

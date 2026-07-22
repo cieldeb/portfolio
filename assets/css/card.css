@@ -153,6 +153,28 @@
     float: right;
 }
 
+/* live stats (e.g. commit count), fetched at build time — see
+   _plugins/remote_git_stats.rb. Grid so a project with several stats lines
+   them up two per row instead of stacking one per line. */
+.card__stats {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.5rem;
+	margin: 0.8rem 0;
+}
+
+.card__stat {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	font-size: 0.8rem;
+	color: #666;
+}
+
+.card__stat i {
+	color: #999;
+}
+
 /* card article */
 .card__article a {
 	text-decoration: none;
