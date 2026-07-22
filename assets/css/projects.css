@@ -1,0 +1,112 @@
+/**
+ * Projects section grid and filter buttons (_includes/projects.html).
+ * The card itself (.card__*) lives in card.css.
+ */
+
+.projects-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: -5px;
+}
+
+.projects-wrapper > .wrapper {
+  box-sizing: border-box;
+  padding: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.projects-wrapper > .wrapper.project-hidden {
+  display: none;
+}
+
+.projects-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px 10px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+/* filter buttons above the grid */
+.project-technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0;
+  gap: 10px 5px;
+  width: 100%;
+}
+
+.project-technologies > .project-technology {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 120px;
+          flex: 1 1 120px;
+}
+
+.project-technology {
+  border: 1px solid #222;
+  border-radius: 2px;
+  margin: 0 5px;
+  padding: 3px 5px;
+}
+
+.project-technology:first-child {
+  margin-left: 0px;
+}
+
+.project-technology:last-child {
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 775px) {
+  .project-technologies {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 20px auto;
+  }
+
+  .project-technologies > .project-technology {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects-grid {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+
+  .projects-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .projects-wrapper > .wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

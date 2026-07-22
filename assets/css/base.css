@@ -1,0 +1,171 @@
+/**
+ * Global resets, typography and the generic section/wrapper layout
+ * shared by every section on the page. Component-specific styles
+ * (header, mosaic, cards, opensource, links, footer) live in their
+ * own files — see head.html for the load order.
+ */
+
+body {
+  min-width: 360px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+}
+
+html, body {
+  overscroll-behavior-y: none;
+}
+
+body.gallery-open {
+  overflow: hidden;
+}
+
+img {
+  max-width: 200%;
+  max-height: 100%;
+}
+
+a {
+  color: #222;
+}
+
+/**
+ * Generic helpers
+ */
+.text-center { text-align: center; }
+.center-align { text-align: center; }
+.justify-text { text-align: justify; }
+.radius { border-radius: 2px; }
+
+.border-tlr-radius {
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+.padding-tb { padding-top: 1.6rem; padding-bottom: 1.6rem;}
+
+.slightly-smaller-text {
+  font-size: 14.4px;
+  font-size: 0.9rem;
+}
+
+.extra {
+  margin-bottom: 0px;
+}
+
+.pt-sans-font {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.shadowDepth0 { box-shadow: 0 1px 3px rgba(0,0,0, 0.12); }
+
+.shadowDepth1 {
+   box-shadow:
+  		0 1px 3px rgba(0,0,0, 0.12),
+    	0 1px 2px rgba(0,0,0, 0.24);
+}
+
+.wrapper {
+	max-width: 400px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/**
+ * Section layout
+ */
+.section {
+  max-width: 768px;
+  margin: 60px auto;
+  padding: 20px 0;
+  min-height: 100vh;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.full-width {
+  width: 100%;
+  max-width: 100%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-size: 2.5rem;
+  color: #222;
+  font-weight: bold;
+}
+
+.nav-links {
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/* blurred, tiled background used behind alternating sections and the footer */
+.section-wrapper.patterned-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-wrapper.patterned-bg::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: url(../images/background.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  -webkit-filter: blur(6px);
+          filter: blur(6px);
+  z-index: -1;
+}
+
+.section-wrapper.patterned-bg .section-heading {
+  color: #fff;
+}
+
+.section-wrapper.patterned-bg .skills-subsection {
+  color: #fff;
+}
+
+.section-wrapper.patterned-bg .paragraph-text {
+  color: #fff;
+}
+
+.section-wrapper.patterned-bg .white-button {
+  color: #fff;
+  border-color: #fff;
+}
+
+.paragraph-text {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20.8px;
+  font-size: 1.3rem;
+  margin: 30px auto;
+  color: #404040;
+}
+
+.paragraph-text-normal {
+  font-family: 'PT Sans', sans-serif;
+  color: #404040;
+}
+
+@media screen and (max-width: 850px) {
+  .section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

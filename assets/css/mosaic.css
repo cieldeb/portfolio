@@ -1,0 +1,167 @@
+/**
+ * mosaic-section.html: links/profiles on one side, a photo mosaic on the
+ * other. See _includes/mosaic-section.html for the reverse/profiles_title
+ * options that these rules support.
+ */
+
+.section.printing {
+  max-width: 1200px;
+}
+
+.printing-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.printing-grid > .printing-profiles {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
+}
+
+.printing-grid > .printing-mosaic {
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1 60%;
+          flex: 4 1 60%;
+}
+
+/* scoped to the same width where .printing-grid is a row, so it can't fight the
+   mobile "stack as column" rule below regardless of stylesheet/specificity order */
+@media screen and (min-width: 601px) {
+  .printing-grid.reversed {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.printing-profiles {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profiles-title {
+  font-size: 20.8px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.profile-list {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
+.profile-link {
+  display: block;
+  text-align: center;
+}
+
+.profile-link i {
+  margin-right: 8px;
+}
+
+.printing-mosaic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+}
+
+.mosaic-item {
+  margin-bottom: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 260px;
+          flex: 1 1 260px;
+}
+
+.mosaic-item img {
+  width: 100%;
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border-radius: 2px;
+  box-shadow: -4px 8px 16px 0 rgba(0, 0, 0, 0.24);
+}
+
+@media screen and (max-width: 850px) {
+  .printing-grid {
+    gap: 30px;
+  }
+
+  .printing-grid > .printing-profiles {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+  }
+
+  .mosaic-item img {
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .printing-grid {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+
+  .printing-grid > .printing-profiles,
+  .printing-grid > .printing-mosaic {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+
+  .printing-profiles {
+    width: 60%;
+  }
+
+  .mosaic-item {
+    -ms-flex-preferred-size: 160px;
+        flex-basis: 160px;
+  }
+
+  .mosaic-item img {
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .printing-profiles {
+    width: 90%;
+  }
+
+  .mosaic-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+
+  .mosaic-item img {
+    height: 260px;
+  }
+}

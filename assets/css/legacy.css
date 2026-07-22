@@ -1,0 +1,114 @@
+/**
+ * Rules with no matching class left in any _includes/_layouts template
+ * (checked via grep). Kept rather than deleted in case a future page
+ * reuses this styling; safe to remove if that never happens.
+ */
+
+.technologies-grid-item {
+  width: 96.6666px;
+  height: 96.6666px;
+  background-color: #fff;
+}
+
+.project-card {
+  padding: 10px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  color: #222;
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-family: Arial, sans-serif;
+  margin: 10px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-link {
+  margin: 10px 0;
+  float: right;
+  font-weight: 500;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.project-tags {
+  margin: 20px 0;
+}
+
+.project-tag-item {
+  background-color: #444;
+  border-radius: 3px;
+  padding: 5px;
+  color: #fff;
+}
+
+.post-date {
+  float: right;
+}
+
+.blog-item {
+  padding: 10px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.blog-title {
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  color: inherit;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.more-blogs {
+  font-size: 16px;
+  font-size: 1rem;
+  margin: 15px 0 20px;
+}
+
+.experience-title {
+  font-size: 22.4px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.experience-details {
+  font-size: 20.8px;
+  font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.experience-date {
+  float: right;
+  font-size: 17.6px;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .set-size {
+    font-size: 8em;
+  }
+  .pie-wrapper .label {
+    font-size: 0.9rem;
+    top: 3rem;
+  }
+}
