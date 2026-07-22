@@ -1,0 +1,52 @@
+# Data for the "Logiciel libre" section (_includes/opensource.html).
+# To add a contribution, add an entry here — the stats block above the grid
+# and the badges are both generated from this list, nothing to update by hand.
+#
+# kind:   "pr" (default) counts towards the Pull requests / Mergées / Ouvertes
+#         stats; "translation" (e.g. Weblate) doesn't, since it's not a PR.
+# status: "merged" or "open" — picks the badge color (opensource-badge-<status>).
+# badge:  optional override for the badge text. Leave unset to get the default
+#         wording for the status ("Mergée"/"Ouverte"); set it for anything that
+#         needs different wording, e.g. "Traductions".
+contributions:
+  - repo: Weblate
+    url: "https://hosted.weblate.org/user/Ciel.deb/"
+    kind: translation
+    status: open
+    badge: Traductions
+    title: Contributions de traduction sur hosted.weblate.org
+
+  - repo: DirectoryLister/DirectoryLister
+    url: "https://github.com/DirectoryLister/DirectoryLister/pull/1525"
+    status: merged
+    title: Correction d'imprécisions dans la traduction française
+
+  - repo: chnzzh/lenovo-logo-changer
+    url: "https://github.com/chnzzh/lenovo-logo-changer/pull/49"
+    status: merged
+    title: Mise à jour de la liste des appareils pris en charge dans le README.md
+
+  - repo: avtzis/awesome-linux-ricing
+    url: "https://github.com/avtzis/awesome-linux-ricing/pull/20"
+    status: merged
+    title: Ajout d'areofyl/fetch aux alternatives à fastfetch
+
+  - repo: rampatra/photography
+    url: "https://github.com/rampatra/photography/pull/129"
+    status: open
+    title: Ajout d'un script pour redimensionner, copier et supprimer des images
+
+  - repo: sillecelik/go-gopher
+    url: "https://github.com/sillecelik/go-gopher/pull/11"
+    status: open
+    title: Ajout d'une version française
+
+  - repo: alixakela/MoodTracker
+    url: "https://github.com/alixakela/II.3510_2526_Skills_G1_UXUI_for_Mobile_MoodTracker/pull/1"
+    status: open
+    title: Ajout d'une humeur "compatissant(e)"
+
+  - repo: iseplife/front
+    url: "https://github.com/iseplife/front/pull/35"
+    status: open
+    title: Correction de fautes de français
