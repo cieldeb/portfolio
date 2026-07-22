@@ -3,3 +3,5 @@ _site
 vendor/ruby
 .vscode
 .gems
+.cache/
+.env

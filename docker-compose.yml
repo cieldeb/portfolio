@@ -1,6 +1,13 @@
 services:
   portfolio:
-    build: .
+    build:
+      context: .
+      # optional; see .env.example — raises the GitHub API rate limit and
+      # enables Cults3D download counts for _plugins/remote_git_stats.rb
+      args:
+        GITHUB_TOKEN: ${GITHUB_TOKEN}
+        CULTS_USERNAME: ${CULTS_USERNAME}
+        CULTS_API_KEY: ${CULTS_API_KEY}
     ports:
       - "8080:80"
     restart: unless-stopped
