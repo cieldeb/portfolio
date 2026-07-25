@@ -59,6 +59,8 @@ This site uses a custom plugin (`_plugins/remote_git_stats.rb`), so it can't use
 2. Push to `master` (or run the workflow manually from the Actions tab) — it builds with `bundle exec jekyll build` and deploys the `_site` output.
 3. Optional: to avoid GitHub API rate limits and enable Cults3D download counts in that build, add repo secrets (Settings → Secrets and variables → Actions) named `CULTS_USERNAME` and `CULTS_API_KEY` — `GITHUB_TOKEN` is provided automatically by Actions, no setup needed for that one.
 
+Using the default workflow by deploying from a branch will work, although it won't show dynamic counters.
+
 ### Scripts
 - `scripts/resize-images.sh <folder> [max-edge] [quality]` — shrinks every image in a folder in place (only ever shrinks, never upscales), detecting each file's real format rather than trusting its extension. Example: `scripts/resize-images.sh assets/images/3dprinting 1920 82`.
 
