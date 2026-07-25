@@ -147,7 +147,7 @@ projects:
   - portfolioTechnique:
       images:
         - assets/images/portfolioTech.png
-      link: https://github.com/cieldeb/portfolioTech
+      link: https://github.com/cieldeb/portfolio
       title: Portfolio technique
       demo: false
       technologies:

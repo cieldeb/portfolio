@@ -65,10 +65,12 @@ module RemoteGitStats
   end
 
   # Runs the request, retrying once on a transient network error (timeout,
-  # connection reset...) before giving up on this attempt.
-  def self.perform(uri, req)
+  # connection reset...) before giving up on this attempt, and following a
+  # handful of HTTP redirects (e.g. GitHub returns a 301 with the new URL
+  # when a repo has been renamed).
+  def self.perform(uri, req, redirects_left = 5)
     attempts = 0
-    begin
+    res = begin
       attempts += 1
       Net::HTTP.start(uri.host, uri.port, use_ssl: true, open_timeout: TIMEOUT, read_timeout: TIMEOUT) do |http|
         http.request(req)
@@ -77,6 +79,15 @@ module RemoteGitStats
       retry if attempts < MAX_ATTEMPTS
       raise
     end
+
+    if res.is_a?(Net::HTTPRedirection) && res["Location"] && redirects_left > 0
+      new_uri = URI.join(uri, res["Location"])
+      new_req = req.class.new(new_uri)
+      req.each_header { |k, v| new_req[k] = v unless k.downcase == "host" }
+      return perform(new_uri, new_req, redirects_left - 1)
+    end
+
+    res
   end
 
   def self.get_json(uri)
