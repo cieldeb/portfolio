@@ -226,7 +226,10 @@ projects:
 
   - watermarker:
       images: 
-        - assets/images/watermarkerExmpl.png
+        - assets/images/watermarker/1guiExmpl.jpg
+        - assets/images/watermarker/2ideExmpl.jpg
+        - assets/images/watermarker/3blankExmpl.jpg
+        - assets/images/watermarker/4wmdExmpl.jpg
       link: https://codeberg.org/cieldeb/watermarker
       title: Watermarker
       demo: false
