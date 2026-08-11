@@ -19,7 +19,7 @@ coding:
       icon: fas fa-code-branch
       label: Codeberg
   photos:
-    - assets/images/watermarkerExmpl.png
+    - assets/images/watermarker/1guiExmpl.jpg
     - assets/images/dirtree.png
     - assets/images/fablab/order.png
     - assets/images/projetFinance/ProjetFinanceActions.png
